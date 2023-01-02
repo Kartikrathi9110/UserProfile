@@ -1,0 +1,11 @@
+{"users":[ 
+    {
+      "Name": "Rahul",
+      "Domain": "www.rahulsharma.com",
+      "Gender":"Male",
+      "dateofbirth":"22-oct-1984",
+      "phonenumber":"88888888",
+      "location": "12 street,silicon valley,Avenue NE,Huntsville",
+      "id": 1
+    }]
+}

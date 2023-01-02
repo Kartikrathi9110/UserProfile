@@ -1,0 +1,47 @@
+<div class="container row">
+
+    <div class="card col-md-4">
+        <img src="assets/image/Professional-Headshot-Poses-Blog-Post.jpg" alt="Jone" style="width:100px;height:100px">
+        <h1>Jone Smith</h1>
+        <div class="title">Premium Member</div>
+        <h3>Harvard University</h3>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <h2><i class="fa fa-envelope" aria-hidden="true"></i>
+            Send an Email</h2>
+    </div>
+
+    <div class="col-md-8 usercard">
+
+        <div class="row userprofile">
+            <h4>Business Details</h4>
+            <div class=" col-md-5 profile">
+                <h3><i class="fa fa-user" aria-hidden="true"> Profile</i></h3>
+            </div>
+            <div class="btncol col-md-7">
+                <button type="button" class="btn btn-danger" mat-raised-button (click)="openDialog()">Edit
+                    Profile</button>
+            </div>
+        </div>
+
+        <div class="userdetail row ">
+
+            <div class="keyvalue col-md-2">
+                <p>Name:</p>
+                <p>Domain: </p>
+                <p>Gender: </p>
+                <p>Date of Birth</p>
+                <p>Phone Number:</p>
+                <p>Location:</p>
+            </div>
+            <div class="userval col-md-10" *ngFor="let userrecord of UserRecorddetail">
+                <p>{{userrecord.Name}}</p>
+                <p>{{userrecord.Domain}}</p>
+                <p>{{userrecord.gender}}</p>
+                <p>{{userrecord.dob}}</p>
+                <p>{{userrecord.phonenumber}}</p>
+                <p>{{userrecord.location}}</p>
+
+            </div>
